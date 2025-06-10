@@ -1,0 +1,24 @@
+DELIMITER $$
+CREATE PROCEDURE `GetAllProducts`()
+BEGIN
+	/* DECLARAÇÃO DE VARIÁEIS */
+    DECLARE totalSale DEC(10,2) DEFAULT 0.0;
+    DECLARE x, y, total, qtd INT DEFAULT 0;
+    
+    /* ATRIBUIÇÃO DE VALORES*/
+    SET total = 10;
+    
+    /* CARREGANDO VALORES DE UM SELECT EM UMA VARIÁVEL */
+    
+    SELECT COUNT(*)
+    INTO qtd
+    FROM produto;
+    
+    SELECT qtd;
+    
+    SELECT * FROM PRODUTO;
+    
+END$$
+DELIMITER ;
+
+CALL `GetAllProducts`();
