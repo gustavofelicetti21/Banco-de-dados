@@ -1,0 +1,13 @@
+				Construa um Modelo Banco de Dados ER Para Controle de Cinemas.
+
+	Após várias reuniões com os futuros usuários do cinema, relacionou-se uma série de regras do negócio que serão a base para a modelagem do diagrama ER
+
+a) A empresa de distribuição possuí várias filiais
+b) Cada cinema possuí identificação única, nome fantasia, endereço, telefone, e-mail, etc.
+c) Os Filmes podem ser dos mais variados gêneros e podem ser registrados com título original, tempo de duração, diretor, etc. Cada filme possui um o mais atores.
+d) As sessões de cinema possuem horários variados e podem ser controlados
+e) Os atores de um filme, podem, obviamente, participar de outros filmes, assim como o diretor de um filme também pode ser ator neste ou em outro filme. Um ator possui: numero de identificação, nacionalidade e data de nascimento
+
+	Escreva o script de criação de banco de dados, respeitando as regras definidas pelo seu enunciado e as regras de entidade relacionamento. Crie um arquivo SQL para semear os dados na tabela, monte comandos SQL para possíveis relatórios propostos por você e sua equipe e no final uma observação: a equipe que fizer usos de recursos, prodecures, trigers e views terão uma consideração diferenciada.
+
+	Três semanas
