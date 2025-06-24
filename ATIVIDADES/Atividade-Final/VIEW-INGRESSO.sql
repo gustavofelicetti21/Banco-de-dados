@@ -14,7 +14,7 @@ SELECT
     CASE
         WHEN S.3D = TRUE THEN 'SIM'
         ELSE 'NÃO'
-    END AS EH_3D, -- Novo campo para indicar se a sessão é 3D
+    END AS EH_3D,
     U.NOME_FANTASIA AS NOME_UNIDADE,
     CONCAT(U.RUA, ', ', U.NUM, ' - ', C.CIDADE, '/', C.UF, ' - CEP: ', C.CEP) AS ENDERECO_UNIDADE,
     VI.VALOR AS VALOR_INGRESSO,
