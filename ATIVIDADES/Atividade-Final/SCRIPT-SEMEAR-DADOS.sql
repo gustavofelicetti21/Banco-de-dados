@@ -315,17 +315,17 @@ INSERT INTO LEGENDA (ID_IDIOMA) VALUES
 (3),
 (4);
 
-INSERT INTO SESSAO (ID_FILME, HR_SESSAO, ID_IDIOMA, ID_SALA, ID_LEGENDA) VALUES
-(1, '2025-07-01 14:00:00', 2, 1, 1),
-(1, '2025-07-01 19:00:00', 2, 1, 1),
-(3, '2025-07-02 16:30:00', 2, 2, 1),
-(4, '2025-07-02 20:00:00', 2, 3, 1),
-(9, '2025-07-03 18:00:00', 1, 4, NULL),
-(10, '2025-07-03 21:00:00', 2, 4, 1),
-(5, '2025-07-04 15:00:00', 6, 5, 2),
-(6, '2025-07-04 22:00:00', 2, 1, 1),
-(14, '2025-07-05 14:00:00', 2, 4, 1),
-(14, '2025-07-05 18:00:00', 2, 4, 1);
+INSERT INTO SESSAO (ID_FILME, HR_SESSAO, ID_IDIOMA, ID_SALA, 3D, ID_LEGENDA) VALUES
+(1, '2025-07-01 14:00:00', 2, 1, FALSE, 1), -- A Origem (2D, Legenda Inglês)
+(1, '2025-07-01 19:00:00', 2, 1, TRUE, 1),  -- A Origem (3D, Legenda Inglês)
+(3, '2025-07-02 16:30:00', 2, 2, FALSE, 1), -- Interestelar (2D, Legenda Inglês)
+(4, '2025-07-02 20:00:00', 2, 3, FALSE, 1), -- Forrest Gump (2D, Legenda Inglês)
+(9, '2025-07-03 18:00:00', 1, 4, FALSE, NULL), -- Cidade de Deus (2D, Sem Legenda)
+(10, '2025-07-03 21:00:00', 2, 4, TRUE, 1), -- Pulp Fiction (3D, Legenda Inglês)
+(5, '2025-07-04 15:00:00', 6, 5, FALSE, 2), -- A Viagem de Chihiro (2D, Legenda Português)
+(6, '2025-07-04 22:00:00', 2, 1, TRUE, 1), -- Matrix (3D, Legenda Inglês)
+(14, '2025-07-05 14:00:00', 2, 4, FALSE, 1), -- Vingadores: Ultimato (2D, Legenda Inglês)
+(14, '2025-07-05 18:00:00', 2, 4, TRUE, 1); -- Vingadores: Ultimato (3D, Legenda Inglês)
 
 INSERT INTO INGRESSO (ID_SESSAO, NUM_POLTRONA, FILEIRA) VALUES
 (1, 1, 'A'),
