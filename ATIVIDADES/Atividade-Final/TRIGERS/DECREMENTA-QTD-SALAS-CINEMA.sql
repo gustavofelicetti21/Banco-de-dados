@@ -5,7 +5,10 @@ AFTER DELETE ON SALA_CINEMA
 FOR EACH ROW
 BEGIN
     UPDATE UNIDADE
-    SET QTD_SALAS = QTD_SALAS - 1
+    SET QTD_SALAS = CASE
+                        WHEN QTD_SALAS > 0 THEN QTD_SALAS - 1
+                        ELSE 0
+                    END
     WHERE ID_UNIDADE = OLD.ID_UNIDADE;
 END;
 
